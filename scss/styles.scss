@@ -47,7 +47,7 @@ html {
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.8rem;
+	font-size: 1.7rem;
 	color: #6f7781;
 	min-height: 100%;
 	margin: 0 auto;
@@ -246,11 +246,11 @@ body {
 	}
 }
 
-// #news {
-// 	.flex-row {
-// 		margin: 100px 0 140px;
-// 	}
-// }
+#news {
+	.flex-row {
+		padding-bottom: 210px;
+	}
+}
 
 h4.subtitle  {
 	font-family: 'gothamBook', sans-serif;
@@ -397,7 +397,7 @@ h4.subtitle  {
 	}
 
 	.flex-item  {
-		width: 30%;
+		width: 32%;
 		height: 515px;
 	}
 }
@@ -457,39 +457,47 @@ h4.subtitle  {
 		background-color: #fff;
 		padding: 30px 35px 30px 20px;
 		@include flex-column;
-		justify-content: space-between;
+		justify-content: flex-start;
 		align-items: flex-start;
 	}
 
 	&__title {
 		font-family: 'gothambold1', sans-serif;
-		font-size: 2.2rem;
+		font-size: 2.1rem;
 		color: #728090;
-		max-height: 5rem;
+		max-height: 7.4rem;
 		overflow: hidden;
+		padding-bottom: 20px;
+		@extend %uppercase;
 
 	}
 	&__text {
 		color: #636c77;
-		// max-height: 4.5rem;
-		// overflow: hidden;
+		max-height: 5.1rem;
+		overflow: hidden;
 	}
 
 	&__author {
+		padding-top: 30px;
 		font-family: 'GothamBook', sans-serif;
 		@include flex-row;
 		justify-content: flex-start;
-		margin-top: 20px;
-		// .wrap {
-		// 	width: 60px;
-		// 	margin: 0 20px 0 0;
-		// 	text-align: center;
-		// 	font-size: 0;
-		// 	&-img {
-		// 		min-width: 100%;
-		// 		min-height: 100%;
-		// 		border-radius: 50%;
-		// 	}
+		.wrap {
+			width: 60px;
+			margin: 0 20px 0 0;
+			text-align: center;
+			font-size: 0;
+			&-img {
+				min-width: 100%;
+				min-height: 100%;
+				border-radius: 50%;
+			}
+		}
+		p.info-name {
+			margin: 0 0 15px;
+		}
+		// .info-name {
+		// 	margin: 0 0 10px;
 		// }
 
 	.info {
